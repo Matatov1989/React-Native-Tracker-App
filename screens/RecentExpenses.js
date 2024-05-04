@@ -4,4 +4,4 @@ function RecentExpenses() {
   return <Text>Recent Expenses</Text>;
 }
 
-export default ManageExpenses;
+export default RecentExpenses;
