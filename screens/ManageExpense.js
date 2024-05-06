@@ -31,7 +31,7 @@ function ManageExpense({ route, navigation }) {
       expensesCtx.updateExpense(editedExpenseId, {
         description: "Test!!!!",
         amount: 29.99,
-        date: new Date("2024-04-05"),
+        date: new Date("2024-05-03"),
       });
     } else {
       expensesCtx.addExpense({

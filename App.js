@@ -62,7 +62,7 @@ function ExpensesOverview() {
 export default function App() {
   return (
     <>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
       <ExpensesContexProvider>
         <NavigationContainer>
           <Stack.Navigator
