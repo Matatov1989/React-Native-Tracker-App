@@ -3,8 +3,10 @@ import axios from "axios";
 const BASE_URL =
   "https://react-native-course-9949e-default-rtdb.europe-west1.firebasedatabase.app";
 
-export function storeExpense(expenseData) {
-  axios.post(BASE_URL + "/expenses.json", expenseData);
+export async function storeExpense(expenseData) {
+  const response = await axios.post(BASE_URL + "/expenses.json", expenseData);
+  const id = response.data.name;
+  return id;
 }
 
 export async function fetchExpenses() {
